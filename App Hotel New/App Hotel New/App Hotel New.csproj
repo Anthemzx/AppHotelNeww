@@ -1,0 +1,1266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2725A50-6F55-453F-BE06-8C29D4E08FFE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>App_Hotel_New</RootNamespace>
+    <AssemblyName>App Hotel New</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>App_Hotel_New.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azure.Core, Version=1.35.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Core.1.35.0\lib\net472\Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Identity, Version=1.10.3.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Identity.1.10.3\lib\netstandard2.0\Azure.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlClient, Version=5.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.SqlClient.5.2.0\lib\net462\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client, Version=4.56.0.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.4.56.0\lib\net461\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Extensions.Msal, Version=4.56.0.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.Extensions.Msal.4.56.0\lib\netstandard2.0\Microsoft.Identity.Client.Extensions.Msal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Abstractions.6.35.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.6.35.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.6.35.0\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.6.35.0\lib\net472\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.6.35.0\lib\net472\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.35.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.6.0.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.1\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=6.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.6.35.0\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.AccessControl.5.0.0\lib\net461\System.IO.FileSystem.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory.Data, Version=1.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.Data.1.0.2\lib\net461\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.ProtectedData.4.7.0\lib\net461\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.7.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRType.Designer.cs">
+      <DependentUpon>MRType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pc01DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pc01DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pc02DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pc02DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pc02DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pc02DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pc02DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pc02DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pc02DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pc02DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pc02DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pc02DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pc02DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pc02DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reaervation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reaervation.Designer.cs">
+      <DependentUpon>Reaervation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm.resx">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRType.resx">
+      <DependentUpon>MRType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reaervation.resx">
+      <DependentUpon>Reaervation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="pc01DataSet.xsc">
+      <DependentUpon>pc01DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pc01DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pc01DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pc01DataSet.xss">
+      <DependentUpon>pc01DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet.xsc">
+      <DependentUpon>pc02DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pc02DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pc02DataSet.xss">
+      <DependentUpon>pc02DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet1.xsc">
+      <DependentUpon>pc02DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pc02DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pc02DataSet1.xss">
+      <DependentUpon>pc02DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet2.xsc">
+      <DependentUpon>pc02DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pc02DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pc02DataSet2.xss">
+      <DependentUpon>pc02DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet3.xsc">
+      <DependentUpon>pc02DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pc02DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pc02DataSet3.xss">
+      <DependentUpon>pc02DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet4.xsc">
+      <DependentUpon>pc02DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pc02DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pc02DataSet4.xss">
+      <DependentUpon>pc02DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet5.xsc">
+      <DependentUpon>pc02DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="pc02DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pc02DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pc02DataSet5.xss">
+      <DependentUpon>pc02DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abbreviation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbsolutePosition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AbstractClass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accelerator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accessibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccountGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActionLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActivateWorkflow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActiveEnvironment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActiveServerApplication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActivityDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActivityMonitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddAgent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddAttachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddBehavior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddBuildToQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddCellToLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddChildNode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddClause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddColumns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddColumnsToRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddComponent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddConditionalLoop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddConnectedServices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddDatabase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddDataSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddDictionary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddDimension.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddDocumentGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddEvent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddFavorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddFriend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddHTMLPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddInheritance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddInheritedForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddLayoutItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddLink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddLocalServer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddMember.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddMethod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddNamespace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddNoColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddOrRemoveColumns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddParameter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddPhone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddQuery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRelationship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddressEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRulerVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddSnippet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddStateGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTeamProject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTestGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddThread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddToDependancyGraph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTopFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddToRowBelow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTransition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddWebForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddWebUserControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdvancedBreakpointDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdvancedProductionBreakpointAlert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdvancedProductionBreakpointOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdvancedProductionTracepointAlert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdvancedProductionTracepointOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdvancedTracePointEnabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aggregate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AggregateCopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AggregateDesignUndefined.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AggregateWarning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignBoth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\All.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllLoadedTests.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlphaTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Analysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalyzeTrace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnimationError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppearanceEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppearanceGuide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppearanceSolid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationBarMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationConnectionDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationPrivate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationRoleError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationRoot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplyCodeChanges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArchitectureExplorer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArcRing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AreaChart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrangeShapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowUpEnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASerif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASPFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASPRazorFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASPWebSite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AssemblyError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AssemblyInfoFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AssignedPart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Association.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AssociationGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AssociationRelationship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsymmetricKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsymmetricKeyWarning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ATL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ATLASPComponent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ATLControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ATLEvent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ATLObject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ATLServer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachDynamicTemplate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attribute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttributeRelationshipEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AudioPlayback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoArrangeShapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoMergeAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoSizeColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoSizeOptimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoSum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarAsteriskOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarDiamondOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarFourDotsOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarHeartOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarInfinityOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarOneDotOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarOneWaveOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarThreeDotsOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarTwoChevronsOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarTwoDotsOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarTwoWaveOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvatarXOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Axis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AxisY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundWorker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backslash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BalanceBrace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BatchCheckIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BDCModelResource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Behavior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BevelJoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bidirectional.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BinaryFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Binding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BindingSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlankApplication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlankPhone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueChannel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookmarkGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookmarkMainMenuItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BorderElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomLeftOfTwoRowsBottomSplit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomRightOfTwoColumnsRightSplit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomRightOfTwoRowsTwoColumns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoundBreakpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoundImageColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BoxPlotChart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BranchChild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BranchContainsChanges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BranchFork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BranchNoColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BranchPermissions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BranchRemote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BranchUploaded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointDependent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointDependentError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointTemporary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointTemporaryDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointTemporaryWarning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointXHROff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointXHRWarning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BringForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrokerPriority.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrowseDefinition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrowsePrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrowserSDK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrushXFormArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuildDefinition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuildErrorList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuildQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuildSolution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BulletList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BusinessObjectDataSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CABProject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CacheError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CacheOk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CacheRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalculatePrimaryKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CallBehaviorAction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CallBrowserSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CallFrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CallHierarchy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Callout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalloutOval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalloutRoundedRectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CallReturnInstructionPointerAlert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CallThread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CallToMethod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CameraDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CameraOutline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelBuild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelPerformanceReport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CandleStickChart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaptionTag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carousel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaseLookupColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaseTableColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CategorizedView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CategoryPageItemTemplate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CellFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterVertically.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CertificateError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Changeset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangesetMergeAcross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangesetMergeUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckBoxDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckBoxFieldColumnUnchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckBoxList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckBoxUnchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckConstraintError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckDot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckedInNode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckedOutByOtherUserNode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckedOutForEditNode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckerboardSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckInItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckOutForEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChildWindow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Choose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassDetails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassInternal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassMethodReference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassMissing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassProtected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassSealed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CleanData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearBreakpointGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearDictionary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearWindowContent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientStatistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloneToDesktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseDocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudBusinessApplication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudConsole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudDownload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudRefresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloudServer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.8\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.macOS.2.88.8\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.8\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.Win32.2.88.8\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+  </Target>
+  <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.8\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.8\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.2.88.8\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.8\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+</Project>

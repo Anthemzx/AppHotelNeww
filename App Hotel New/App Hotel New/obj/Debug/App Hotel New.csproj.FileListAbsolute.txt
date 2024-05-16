@@ -1,0 +1,89 @@
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App Hotel New.csproj.AssemblyReference.cache
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App_Hotel_New.AdminForm.resources
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App_Hotel_New.Form1.resources
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App_Hotel_New.Form2.resources
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App_Hotel_New.MasterForm.resources
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App_Hotel_New.MRType.resources
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App_Hotel_New.Properties.Resources.resources
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App_Hotel_New.Reaervation.resources
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App_Hotel_New.Resources.Resource1.resources
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App Hotel New.csproj.GenerateResource.cache
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App Hotel New.csproj.CoreCompileInputs.cache
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\libSkiaSharp.dylib
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\x86\libSkiaSharp.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\x64\libSkiaSharp.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\arm64\libSkiaSharp.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\App Hotel New.exe.config
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\App Hotel New.exe
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\App Hotel New.pdb
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Azure.Core.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Azure.Identity.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.Identity.Client.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Buffers.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.IO.FileSystem.AccessControl.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Memory.Data.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Memory.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Numerics.Vectors.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Security.AccessControl.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Security.Permissions.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Security.Principal.Windows.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Text.Encodings.Web.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Text.Json.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.ValueTuple.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Azure.Core.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Azure.Identity.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.Identity.Client.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Buffers.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.IO.FileSystem.AccessControl.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Memory.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Memory.Data.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Numerics.Vectors.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Security.AccessControl.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Security.Permissions.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Security.Principal.Windows.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Text.Encodings.Web.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Text.Json.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\System.ValueTuple.xml
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App Hote.456DE72D.Up2Date
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App Hotel New.exe
+D:\LKS\App Hotel New\App Hotel New\obj\Debug\App Hotel New.pdb

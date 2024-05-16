@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\LKS\\App Hotel New\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|d:\\lks\\app hotel new\\app hotel new\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\reaervation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\reaervation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\reaervation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\reaervation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\reaervation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\reaervation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\mrtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\mrtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\mrtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\mrtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\reaervation.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\reaervation.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\masterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\masterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|D:\\LKS\\App Hotel New\\app hotel new\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2725A50-6F55-453F-BE06-8C29D4E08FFE}|App Hotel New\\App Hotel New.csproj|solutionrelative:app hotel new\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reaervation.cs [Design]",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Reaervation.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\Reaervation.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Reaervation.cs [Design]",
+              "RelativeToolTip": "App Hotel New\\Reaervation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:03:07.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Reaervation.Designer.cs",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Reaervation.Designer.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\Reaervation.Designer.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Reaervation.Designer.cs",
+              "RelativeToolTip": "App Hotel New\\Reaervation.Designer.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAgwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T02:41:18.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Form2.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\Form2.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Form2.cs [Design]",
+              "RelativeToolTip": "App Hotel New\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T00:02:08.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reaervation.cs",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Reaervation.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\Reaervation.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Reaervation.cs",
+              "RelativeToolTip": "App Hotel New\\Reaervation.cs",
+              "ViewState": "AQIAAFoBAAAAAAAAAAAAAHUBAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T05:44:55.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Program.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\Program.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Program.cs",
+              "RelativeToolTip": "App Hotel New\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T00:46:48.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MRType.cs",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\MRType.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\MRType.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\MRType.cs",
+              "RelativeToolTip": "App Hotel New\\MRType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T04:21:28.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MRType.cs [Design]",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\MRType.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\MRType.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\MRType.cs [Design]",
+              "RelativeToolTip": "App Hotel New\\MRType.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:26:38.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reaervation.resx",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Reaervation.resx",
+              "RelativeDocumentMoniker": "App Hotel New\\Reaervation.resx",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Reaervation.resx",
+              "RelativeToolTip": "App Hotel New\\Reaervation.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-15T10:31:58.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MasterForm.cs [Design]",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\MasterForm.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\MasterForm.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\MasterForm.cs [Design]",
+              "RelativeToolTip": "App Hotel New\\MasterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T00:46:51.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Form1.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\Form1.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Form1.cs [Design]",
+              "RelativeToolTip": "App Hotel New\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T00:34:33.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\AdminForm.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\AdminForm.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\AdminForm.cs [Design]",
+              "RelativeToolTip": "App Hotel New\\AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T03:27:44.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminForm.cs",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\AdminForm.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\AdminForm.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\AdminForm.cs",
+              "RelativeToolTip": "App Hotel New\\AdminForm.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T03:36:25.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Form2.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\Form2.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Form2.cs",
+              "RelativeToolTip": "App Hotel New\\Form2.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAuwDYAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T03:08:12.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\LKS\\App Hotel New\\App Hotel New\\Form1.cs",
+              "RelativeDocumentMoniker": "App Hotel New\\Form1.cs",
+              "ToolTip": "D:\\LKS\\App Hotel New\\App Hotel New\\Form1.cs",
+              "RelativeToolTip": "App Hotel New\\Form1.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBIAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T00:34:36.439Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
